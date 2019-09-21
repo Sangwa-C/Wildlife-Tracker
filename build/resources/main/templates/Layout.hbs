@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Wildlife Track{{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <style>
+
+
+    </style>
+
+</head>
+<body>
+
+<!--    <style>-->
+<!--        background-image:url("https://i.imgur.com/1mLzjRb.jpg")-->
+<!--    </style>-->
+
+
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">HOME</a></li>
+    <li role="presentation"><a href="/posts/new">Add Animals</a></li>
+    <li role="presentation"><a href="/squad-form">View Animals</a></li>
+    <li role="presentation"><a href="/squad-form">Post Animal Sighting</a></li>
+</ul>
+<div class="container">
+    <!--begin main template-->
+    <div class="page-header">
+        <h1 style="text-align:center">Wildlife tracker</h1>
+    </div>
+
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+
+<div class="footer">
+    <p>Wildlife Tracker © 2019</p>
+</div>
+
+
+<!--end main template-->
+{{#block "footer"}}
+
+
+
+
+    </body>
+    </html>
+{{/block}}

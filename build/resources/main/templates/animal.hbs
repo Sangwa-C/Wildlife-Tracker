@@ -1,0 +1,21 @@
+{{#partial "content"}}
+
+
+    {{#if posts}}
+        {{#each posts }}
+            <p>Current post:</p>
+            <p>{{ age }} <a href="/hero/{{id}}">read more...</a></p>
+        {{/each}}
+    {{else}}
+
+        <div class="well">
+            <p1> It is also a self-aware parody of the Marvel characters, let's create our very own heroes and assign them super powers, flaws and other amazing thing.
+                start the journey, design your own character!</p1>
+        </div>
+
+
+
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}
