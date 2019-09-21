@@ -1,11 +1,11 @@
-public class Animals {
+public abstract class Animals {
     public int id;
     public String name;
 
-    public Animals(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+//    public Animals(int id, String name) {
+//        this.id = id;
+//        this.name = name;
+//    }
 
     public int getId() {
         return id;
