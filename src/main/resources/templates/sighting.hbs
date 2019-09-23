@@ -1,0 +1,110 @@
+{{#partial "content"}}
+
+
+    <div class="container">
+
+        <div class="well">
+            <h1>Create a new hero!</h1>
+            <small> ~turn your imaginations into epic~ </small>
+
+            <div class="row">
+                <div class="col-sm-6">
+                   <h1>Endangered Animal</h1>
+                    <center>
+                        <form action="/posts/new" method="post">
+                            <div class="form-group">
+                                <label for="name"> Animals's Name</label>
+                                <input id="name" name="name" type="text" class="form-control"><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="health"> Animal's Health</label>
+                                <select>
+                                    <option value=""></option>
+                                    <option value="sick">Sick</option>
+                                    <option value="okay">Okay</option>
+                                    <option value="healthy">healthy</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age"> Hero's Power</label>
+                                <select>
+                                    <option value=""></option>
+                                    <option value="newborn">New Born</option>
+                                    <option value="young">Young</option>
+                                    <option value="adult">Adult</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location"> Animal's location</label>
+                                <input id="location" name="location" type="location" class="form-control"><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reporter"> Reporter's Name</label>
+                                <input id="reporter" name="reporter" type="reporter" class="form-control"><br>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-success">Submit Report</button>
+                        </form>
+                    </center>
+                </div>
+
+                <div class="col-sm-6">
+                    <h1>Non-endangered Animal</h1>
+                    <center>
+                        <form action="/posts/new" method="post">
+                            <div class="form-group">
+                                <label for="name"> Animals's Name</label>
+                                <input id="name" name="name" type="text" class="form-control"><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="health"> Animal's Health</label>
+                                <select>
+                                    <option value=""></option>
+                                    <option value="sick">Sick</option>
+                                    <option value="okay">Okay</option>
+                                    <option value="healthy">healthy</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age"> Hero's Power</label>
+                                <select>
+                                    <option value=""></option>
+                                    <option value="newborn">New Born</option>
+                                    <option value="young">Young</option>
+                                    <option value="adult">Adult</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location"> Animal's location</label>
+                                <input id="location" name="location" type="location" class="form-control"><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reporter"> Reporter's Name</label>
+                                <input id="reporter" name="reporter" type="reporter" class="form-control"><br>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-success">Submit Report</button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+{{/partial}}
+
+{{> layout.hbs}}
