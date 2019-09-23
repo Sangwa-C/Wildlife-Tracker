@@ -1,21 +1,29 @@
 {{#partial "content"}}
 
-
-    {{#if posts}}
-        {{#each posts }}
-            <p>Current post:</p>
-            <p>{{ age }} <a href="/hero/{{id}}">read more...</a></p>
-        {{/each}}
-    {{else}}
-
         <div class="well">
-            <p1> It is also a self-aware parody of the Marvel characters, let's create our very own heroes and assign them super powers, flaws and other amazing thing.
-                start the journey, design your own character!</p1>
+                <center>
+                    <h1>Track your Sightseeing!</h1>
+                    <small> ~No effort to save these animals is too small.~ </small>
+                </center><br><br>
+                <center>
+                    <form action="/animal" method="post">
+                        <div class="form-group">
+                            <label for="name"> Animal's Name</label>
+                            <input id="name" name="name" type="text" class="form-control" >
+                        </div>
+
+                        <div class="form-group">
+                            <input type="radio" name="endangered" value="endangered"> Endangered<br>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Add Animal</button><br><br>
+
+                    </form>
+
+                   <p>View animal list  <a href="/listanimal">View list</a></p>
+                </center>
         </div>
 
-
-
-    {{/if}}
 {{/partial}}
 
-{{> layout.hbs}}
+{{> Layout.hbs}}

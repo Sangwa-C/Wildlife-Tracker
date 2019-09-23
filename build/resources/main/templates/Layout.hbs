@@ -4,7 +4,59 @@
     <title>{{#block "title"}}Wildlife Track{{/block}}</title>
 
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
     <style>
+
+    body {
+        background-image:url("https://www.bushmanskloof.co.za/-/media/ttc/rch/bushmans-kloof/main-carousel/mobile-1024x576/bk-wildlife-091-1024x576.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        color:black;
+    }
+
+    input{
+    padding: 100px;
+    }
+
+
+   small{
+        font-family: 'Chilanka', cursive;
+        color:#03AF4E ;
+        font-size:1.2em;
+        font-weight:900;
+        margin-bottom:40px
+    }
+
+
+    button{
+    color:black;
+    }
+
+
+    .well{
+        margin-top:100px;
+        margin-left:100px;
+        opacity:0.8;
+        color:white;
+        border-radius:50px;
+<!--        text-align:center;-->
+        width:80%;
+        background-color:black;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height:40px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+     .form-control{
+    width:25em;
+    }
 
 
     </style>
@@ -19,9 +71,9 @@
 
 <ul class="nav nav-tabs">
     <li role="presentation" class="active"><a href="#">HOME</a></li>
-    <li role="presentation"><a href="/posts/new">Add Animals</a></li>
-    <li role="presentation"><a href="/squad-form">View Animals</a></li>
-    <li role="presentation"><a href="/squad-form">Post Animal Sighting</a></li>
+    <li role="presentation"><a href="/animal">Add Animals</a></li>
+    <li role="presentation"><a href="/listanimal">View Animals</a></li>
+    <li role="presentation"><a href="/sighting">Post Animal Sighting</a></li>
 </ul>
 <div class="container">
     <!--begin main template-->
