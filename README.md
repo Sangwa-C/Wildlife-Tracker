@@ -10,6 +10,8 @@ Project which I am provided with the code containing the basic classes, Spark se
 
 The Forest Service is considering a proposal from a timber company to clearcut a nearby forest of Douglas Fir. Before this proposal may be approved, they must complete an environmental impact study. This application was developed to allow Rangers to track wildlife sightings in the area.
 
+# Install
+
 ## Pre-requisites
 
   1. Ensure you have Java installed 
@@ -47,6 +49,16 @@ The Forest Service is considering a proposal from a timber company to clearcut a
     
      gradle run
 
+
+## Manual Database Creation
+To create the necessary databases, launch postgres, then psql, and run the following commands:
+
+*CREATE DATABASE wildlife_tracker;
+*\c wildlife_tracker;
+*CREATE TABLE animals (id serial PRIMARY KEY, name varchar);
+*CREATE TABLE sight  CREATE TABLE sightings (id SERIAL PRIMARY KEY,name varchar,location varchar,rangeName varchar,health varchar, age varchar);
+*CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
+
 ## BDD
 
 **The program should allow the user to add an Animal.**
@@ -58,15 +70,30 @@ The Forest Service is considering a proposal from a timber company to clearcut a
     Output Example: "Animals's Name: Zebra"
      
  **Here are some screenshots from the project**
+ 
+ 
  ![Home-page](src/home.png)
  ![Hero-form](src/hero%20form.png)
  ![Hero-answer](src/hero answer.png)
  ![Squad-answer](src/squad-form.png)  
  ![Squad-answer](src/squad-answer.png)
+ 
+ 
 ## Known Bugs
 
 This webpage is not suitable for all screen sizes and it might load slowly if your internet is low.
 
+ant Can submit empty or invalid characters in a non-endangered animal sighting report.
+
+ant Can submit empty or invalid characters in an endangered animal sighting report.
+
+ant User can submit empty or invalid characters when adding an animal to the system.
+
+ant User can not delete entry.
+
+bug User can not update entry.
+
+bug Recording date of sighting not displayed in detail
 
 ## Technologies Used
 
