@@ -46,10 +46,25 @@ public class App {
 
 
         get("/listanimal", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
+            Map<String, Object> model = new HashMap<>();
             List<Animals> animals=Animals.all();
             model.put("animals",animals);
+            List<testclass> ukuri =Sightings.sangwa();
+            System.out.println(ukuri);
+            model.put("sightings",ukuri);
             return new ModelAndView(model, "listanimal.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        post("/sighting", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            String aName = request.queryParams("aName");
+            String location = request.queryParams("location");
+            Sightings newSightings= new Sightings(aName,location);
+            newSightings.save();
+            model.put("newSightings", newSightings);
+            model.put("aName", aName);
+            model.put("location", location);
+            return new ModelAndView(model, "sighting.hbs");
         }, new HandlebarsTemplateEngine());
 
 

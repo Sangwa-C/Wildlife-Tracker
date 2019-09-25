@@ -1,5 +1,4 @@
 import org.sql2o.Connection;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,8 +14,6 @@ public class Animals {
     public int getId() {
         return id;
     }
-
-
 
     public String getName() {
         return name;
@@ -61,4 +58,5 @@ public class Animals {
             return con.createQuery(sql).executeAndFetch(Animals.class);
         }
     }
+
 }

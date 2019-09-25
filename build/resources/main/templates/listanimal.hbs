@@ -1,6 +1,6 @@
 {{#partial "content"}}
 
-    
+
     <div class="well">
         {{#if animals}}
             {{#each animals}}
@@ -8,6 +8,19 @@
             {{/each}}
         {{/if}}
     </div>
+
+    <div class="well">
+        {{#if sightings}}
+            {{#each sightings}}
+                <p> Animal's name: {{aName}} </p>
+                <p> Animal's location: {{ location }} </p>
+<!--                <p> Animal's rangeName: {{ rangeName }} </p>-->
+<!--                <p> Animal's rangeName: {{ rangeName }} </p>-->
+            {{/each}}
+        {{/if}}
+    </div>
+
+
 
 
 
