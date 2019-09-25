@@ -53,11 +53,11 @@ The Forest Service is considering a proposal from a timber company to clearcut a
 ## Manual Database Creation
 To create the necessary databases, launch postgres, then psql, and run the following commands:
 
-*CREATE DATABASE wildlife_tracker;
-*\c wildlife_tracker;
-*CREATE TABLE animals (id serial PRIMARY KEY, name varchar);
-*CREATE TABLE sight  CREATE TABLE sightings (id SERIAL PRIMARY KEY,name varchar,location varchar,rangeName varchar,health varchar, age varchar);
-*CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
+* CREATE DATABASE wildlife_tracker;
+* \c wildlife_tracker;
+* CREATE TABLE animals (id serial PRIMARY KEY, name varchar);
+* CREATE TABLE sight  CREATE TABLE sightings (id SERIAL PRIMARY KEY,name varchar,location varchar,rangeName varchar,health varchar, age varchar);
+* CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 
 ## BDD
 
