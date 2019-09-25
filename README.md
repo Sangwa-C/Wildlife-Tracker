@@ -83,15 +83,15 @@ To create the necessary databases, launch postgres, then psql, and run the follo
 
 This webpage is not suitable for all screen sizes and it might load slowly if your internet is low.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" style="width:2px; height:2px;" >Can submit empty or invalid characters in a non-endangered animal sighting report.
+<img class="emoji" alt="bug" height="20" width="20"   " src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" " >Can submit empty or invalid characters in a non-endangered animal sighting report.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" class="readme"> Can submit empty or invalid characters in an endangered animal sighting report.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > Can submit empty or invalid characters in an endangered animal sighting report.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" class="readme"> User can submit empty or invalid characters when adding an animal to the system.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > User can submit empty or invalid characters when adding an animal to the system.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" class="readme"> User can not delete entry.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > User can not delete entry.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" class="readme"> User can not update entry.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > User can not update entry.
 
 <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > Recording date of sighting not displayed in detail
 
