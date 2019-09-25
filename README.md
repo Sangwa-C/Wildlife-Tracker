@@ -83,11 +83,11 @@ To create the necessary databases, launch postgres, then psql, and run the follo
 
 This webpage is not suitable for all screen sizes and it might load slowly if your internet is low.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> Can submit empty or invalid characters in a non-endangered animal sighting report.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">Can submit empty or invalid characters in a non-endangered animal sighting report.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> Can submit empty or invalid characters in an endangered animal sighting report.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> Can submit empty or invalid characters in an endangered animal sighting report.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> User can submit empty or invalid characters when adding an animal to the system.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> User can submit empty or invalid characters when adding an animal to the system.
 
 <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> User can not delete entry.
 
