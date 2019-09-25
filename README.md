@@ -83,17 +83,17 @@ To create the necessary databases, launch postgres, then psql, and run the follo
 
 This webpage is not suitable for all screen sizes and it might load slowly if your internet is low.
 
-ant Can submit empty or invalid characters in a non-endangered animal sighting report.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> Can submit empty or invalid characters in a non-endangered animal sighting report.
 
-ant Can submit empty or invalid characters in an endangered animal sighting report.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> Can submit empty or invalid characters in an endangered animal sighting report.
 
-ant User can submit empty or invalid characters when adding an animal to the system.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> User can submit empty or invalid characters when adding an animal to the system.
 
-ant User can not delete entry.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> User can not delete entry.
 
-bug User can not update entry.
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> User can not update entry.
 
-bug Recording date of sighting not displayed in detail
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"> Recording date of sighting not displayed in detail
 
 ## Technologies Used
 
@@ -102,7 +102,7 @@ bug Recording date of sighting not displayed in detail
 * Spark
 * HTML
 * CSS & Bootstrap
-*PostgreSQL
+* PostgreSQL
 * Junit
  
 ## Support and contact details
