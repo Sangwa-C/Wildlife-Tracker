@@ -81,19 +81,52 @@ To create the necessary databases, launch postgres, then psql, and run the follo
  
 ## Known Bugs
 
-This webpage is not suitable for all screen sizes and it might load slowly if your internet is low.
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji>This webpage is not suitable for all screen sizes and it might load slowly if your internet is low.
+</p>
 
-<img class="emoji" alt="bug" height="20" width="20"   " src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" " >Can submit empty or invalid characters in a non-endangered animal sighting report.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > Can submit empty or invalid characters in an endangered animal sighting report.
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"  >
+ </g-emoji>   Can submit empty or invalid characters in a non-endangered animal sighting report.
+</p> 
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > User can submit empty or invalid characters when adding an animal to the system.
+ <p>    
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji> Can submit empty or invalid characters in an endangered animal sighting report.
+</p>
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > User can not delete entry.
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > User can not update entry.
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji> User can submit empty or invalid characters when adding an animal to the system.
+</p>
 
-<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png" > Recording date of sighting not displayed in detail
+
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji> User can not delete entry.
+</p>
+
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji> User can not update entry.
+</p>
+
+
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji> Recording date of sighting not displayed in detail
+</p>
+
 
 ## Technologies Used
 
