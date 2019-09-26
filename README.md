@@ -135,6 +135,7 @@ To create the necessary databases, launch postgres, then psql, and run the follo
 * CSS & Bootstrap
 * PostgreSQL
 * Junit
+* Heroku
  
 ## Support and contact details
 If you any issues or have questions, ideas or concerns contact us on chelseasabinesangwa@gmail.com.
