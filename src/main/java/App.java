@@ -42,6 +42,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             List<Animals> animals=Animals.all();
             model.put("animals",animals);
+
             return new ModelAndView(model, "animal.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -59,6 +60,9 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             List<Animals> animals=Animals.all();
             model.put("animals",animals);
+            List<Sightings> ibisiga =Sightings.all();
+            model.put("ibinabyo",ibisiga);
+
             return new ModelAndView(model, "listanimal.hbs");
         }, new HandlebarsTemplateEngine());
 
