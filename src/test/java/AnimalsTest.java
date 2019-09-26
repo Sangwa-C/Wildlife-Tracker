@@ -8,9 +8,9 @@ import org.sql2o.*;
 
 public class AnimalsTest {
 
-    @Test
-    public void animal_instantiatesCorrectly_true() {
-//        Animals testAnimals = new Animals(1,"dog");
+//    @Test
+//    public void animal_instantiatesCorrectly_true() {
+////        Animals testAnimals = new Animals(1,"dog");
 //        assertEquals(true, testAnimals instanceof Animals);
-    }
+//    }
 }

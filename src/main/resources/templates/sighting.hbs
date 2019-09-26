@@ -1,5 +1,9 @@
 {{#partial "content"}}
 
+    <div class="page-header">
+        <h1 style="text-align:center">Wildlife tracker</h1>
+    </div>
+
 
     <div class="container">
 
@@ -14,14 +18,14 @@
                         <form  action="/sighting" method="post">
 
                             <div class="form-group-block">
-                                <label for="aName"> Animal's Name</label>
-                                <input id="aName" name="aName" type="text" class="form-control"><br>
+                                <label for="aname"> Animal's Name</label>
+                                <input id="aname" name="aname" type="text" class="form-control"><br>
                             </div>
 
                             <div class="form-group-block">
                                 <label for="health"> Animal's Health</label><br>
-                                <select style=" padding-left: 280px; padding-top: 15px; border-radius:5px; color:black  ">
-                                    <option value=""></option>
+                                <select name="health" style=" padding-left: 280px; padding-top: 15px; border-radius:5px; color:black  ">
+
                                     <option value="sick">Sick</option>
                                     <option value="okay">Okay</option>
                                     <option value="healthy">healthy</option>
@@ -30,8 +34,8 @@
 
                             <div class="form-group-block">
                                 <label for="age"> Animals's Age</label><br>
-                                <select style=" padding-left: 270px; padding-top: 15px; border-radius:5px; color:black; text-align:center; ">
-                                    <option value=""></option>
+                                <select name="age" style=" padding-left: 270px; padding-top: 15px; border-radius:5px; color:black; text-align:center; ">
+
                                     <option value="newborn">New Born</option>
                                     <option value="young">Young</option>
                                     <option value="adult">Adult</option>
@@ -44,8 +48,8 @@
                             </div>
 
                             <div class="form-group-block">
-                                <label for="reporter"> Reporter's Name</label>
-                                <input id="reporter" name="reporter" type="reporter"  placeholder="your name..."  class="form-control"><br>
+                                <label for="reporter"> Ranger Name</label>
+                                <input id="reporter" name="rangename" type="reporter"  placeholder="Report's Name..."  class="form-control"><br>
                             </div>
 
 

@@ -5,10 +5,11 @@
 
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
     <style>
 
     body {
-        background-image:url("https://www.bushmanskloof.co.za/-/media/ttc/rch/bushmans-kloof/main-carousel/mobile-1024x576/bk-wildlife-091-1024x576.jpg");
+        background-image:url("https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_960_720.jpg");
         background-size:cover;
         background-repeat:no-repeat;
         color:black;
@@ -39,7 +40,6 @@
         opacity:0.8;
         color:white;
         border-radius:50px;
-<!--        text-align:center;-->
         width:80%;
         background-color:black;
     }
@@ -58,28 +58,40 @@
     width:25em;
     }
 
+    ul{
+
+    margin-left:400px;
+    margin-right:620px;
+    margin-top:50px;
+    }
+
+    .text{
+       font-family: 'Mansalva', cursive;
+       font-size:2em;
+       color:white;
+    }
+
 
     </style>
 
 </head>
 <body>
 
-<!--    <style>-->
-<!--        background-image:url("https://i.imgur.com/1mLzjRb.jpg")-->
-<!--    </style>-->
+<div class="text">
+    <nav>
+        <ul class="nav nav-tabs">
+            <li  ><a href="/">HOME</a></li>
+            <li  ><a href="/animal">Add Animals</a></li>
+            <li  ><a href="/listanimal">View Animals</a></li>
+            <li  ><a href="/sighting">Post Animal Sighting</a></li>
+        </ul>
+    </nav>
 
+</div>
 
-<ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">HOME</a></li>
-    <li role="presentation"><a href="/animal">Add Animals</a></li>
-    <li role="presentation"><a href="/listanimal">View Animals</a></li>
-    <li role="presentation"><a href="/sighting">Post Animal Sighting</a></li>
-</ul>
 <div class="container">
     <!--begin main template-->
-    <div class="page-header">
-        <h1 style="text-align:center">Wildlife tracker</h1>
-    </div>
+
 
     <div class="col-md-12">
         {{#block "content"}}

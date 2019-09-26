@@ -33,24 +33,6 @@ public class Animals {
         }
     }
 
-    public static Animals find(int id) {
-        try(Connection con = DB.sql2o.open()) {
-            String sql = "SELECT * FROM animals where id=:id";
-            Animals animals = con.createQuery(sql)
-                    .addParameter("id", id)
-                    .executeAndFetchFirst(Animals.class);
-            return animals;
-        }
-    }
-
-    public List<Animals> getAnimals() {
-        try(Connection con = DB.sql2o.open()) {
-            String sql = "SELECT * FROM animals as where personId=:id";
-            return con.createQuery(sql)
-                    .addParameter("id", this.id)
-                    .executeAndFetch(Animals.class);
-        }
-    }
 
     public static List<Animals> all() {
         String sql = "SELECT * FROM animals ;";

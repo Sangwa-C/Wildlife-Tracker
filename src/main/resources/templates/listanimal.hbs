@@ -1,5 +1,10 @@
 {{#partial "content"}}
 
+    <div class="page-header">
+        <h1 style="text-align:center">Wildlife tracker</h1>
+    </div>
+
+
 
     <div class="well">
         {{#if animals}}
@@ -12,10 +17,11 @@
     <div class="well">
         {{#if sightings}}
             {{#each sightings}}
-                <p> Animal's name: {{aName}} </p>
+                <p> Animal's name: {{aname}} </p>
+                <p> Animal's health: {{ health }} </p>
+                <p> Animal's age: {{ age }} </p>
                 <p> Animal's location: {{ location }} </p>
-<!--                <p> Animal's rangeName: {{ rangeName }} </p>-->
-<!--                <p> Animal's rangeName: {{ rangeName }} </p>-->
+                <p> Ranger Name: {{ rangename }} </p>
             {{/each}}
         {{/if}}
     </div>

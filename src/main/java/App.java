@@ -10,20 +10,31 @@ import static spark.Spark.*;
 import static spark.Spark.get;
 
 public class App {
-    public static void main(String[] args) {
-        staticFileLocation("/public");
 
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
+
+    public static void main(String[] args) {
+        port(getHerokuAssignedPort());
+        staticFileLocation("/public");
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-
+            model.put("animals", Animals.all());
             return new ModelAndView(model, "home.hbs");
         }, new HandlebarsTemplateEngine());
 
-
         get("/sighting", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-//            model.put("template", "templates/index.vtl");
+          List<Sightings> sightings = Sightings.all();
+            model.put("sightings", sightings );
+            List<Animals> animals=Animals.all();
+            model.put("animals",animals);
             return new ModelAndView(model, "sighting.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -39,9 +50,8 @@ public class App {
             String name = request.queryParams("name");
             Animals newanimals= new Animals(name);
             model.put("name", name);
-           newanimals.save();
+            newanimals.save();
             return new ModelAndView(model, "animal.hbs");
-//            response.redirect("/");
         }, new HandlebarsTemplateEngine());
 
 
@@ -49,22 +59,36 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             List<Animals> animals=Animals.all();
             model.put("animals",animals);
-            List<testclass> ukuri =Sightings.sangwa();
-            System.out.println(ukuri);
-            model.put("sightings",ukuri);
+            return new ModelAndView(model, "listanimal.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/listanimal", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            List<Sightings> sightings =  Sightings.all();
+            model.put("sightings" , sightings);
             return new ModelAndView(model, "listanimal.hbs");
         }, new HandlebarsTemplateEngine());
 
         post("/sighting", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            String aName = request.queryParams("aName");
+            String aname = request.queryParams("aname");
+            String health = request.queryParams("health");
+            String age = request.queryParams("age");
             String location = request.queryParams("location");
-            Sightings newSightings= new Sightings(aName,location);
+            String rangename = request.queryParams("rangename");
+
+            Sightings newSightings= new Sightings(aname,health,age,location,rangename);
+
             newSightings.save();
-            model.put("newSightings", newSightings);
-            model.put("aName", aName);
+
+            model.put("aname", aname);
+            model.put("health", health);
+            model.put("age", age);
             model.put("location", location);
-            return new ModelAndView(model, "sighting.hbs");
+            model.put("rangename", rangename);
+            response.redirect("/listanimal");
+
+            return new ModelAndView(model, "listanimal.hbs");
         }, new HandlebarsTemplateEngine());
 
 
