@@ -65,20 +65,18 @@ To create the necessary databases, launch postgres, then psql, and run the follo
 
     Input Example: "Animals's Name: Zebra"
                    
-**The program should return when the user creates a hero** 
+**The program should return when the user add an animals to the database** 
 
     Output Example: "Animals's Name: Zebra"
-     
- **Here are some screenshots from the project**
  
+ **The program should allow the user to report an endangered animal**
  
- ![Home-page](src/home.png)
- ![Hero-form](src/hero%20form.png)
- ![Hero-answer](src/hero answer.png)
- ![Squad-answer](src/squad-form.png)  
- ![Squad-answer](src/squad-answer.png)
- 
- 
+         Input Example: "Animals's Name: Zebra"   
+                        "Animal's Health: healthy"
+                        "Animals's Age: New born"
+                        "Animal's location: zone A"
+                        "Reporter's Name: Chelsea"
+    
 ## Known Bugs
 
 <p>
